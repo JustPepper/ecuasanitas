@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Ecuasanitas - @yield('title')</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -14,14 +14,25 @@
 
         <header class="header">
             <div class="flex-container top-nav">
-                <div class="header-logo">
+                <div class="top-nav-logo">
                     <img src="{{ asset('images/ecuasanitas-logo.svg') }}" alt="">
                 </div>
-                <div class="header-responsive-menu">
+                <div class="top-nav-responsive">
                     <svg><use xlink:href="#menu" /></svg>
                 </div>
+                <nav class="top-nav-menu">
+                    <ul>
+                        <li class="list-item"><a href="#">CONOZCA ECUASANITAS</a></li>
+                        <li class="list-item"><a href="#">PLANES</a></li>
+                        <li class="list-item"><a href="#">SERVICIOS</a></li>
+                        <li class="list-item"><a href="#">CENTROS</a></li>
+                        <li class="list-item"><a href="#">OFICINAS</a></li>
+                        <li><a href="#" class="btn btn--blue">PORTAL DE CLIENTES</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="flex-container bottom-nav">
+            <div class="bottom-nav">
+                <div class="flex-container">
                 <p>CENTRO DE ATENCIÓN TELEFÓNICA</p>
                 <div class="bottom-nav-info">
                     <span>3956-280 QUITO Y PROVINCIAS</span>
@@ -30,9 +41,10 @@
                 <div class="bottom-nav-search">
                     <form action="">
                         <label for="">
-                            <input type="text">
+                            <input type="text" class="btn">
                         </label>
                     </form>
+                </div>
                 </div>
             </div>
         </header>

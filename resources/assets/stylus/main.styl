@@ -1,1 +1,179 @@
 @import 'booo'
+
+flex-center()
+	display flex
+	justify-content center
+	align-items center
+	
+media(size)
+	@media screen and (min-width: size)
+		{block}
+
+use-reset()
+use-box-sizing-reset()
+
+
+/* Colors */
+$blue = #1878be
+$cian = #669999
+$black = #4f4f4f
+
+/* Fonts */
+font-face('../fonts/neusa_medium-webfont', 'Neusa Medium')
+font-face('../fonts/neusa_semibold-webfont', 'Neusa Semibold')
+
+
+/* Global styles */
+
+body
+	font-family Neusa Medium
+	color $black
+
+svg#svg
+	display none
+
+.flex-container
+	width 100%
+	max-width 1080px
+	margin auto
+	display flex
+
+a
+	text-decoration none
+	color inherit
+	
+.section-big-title
+	font-family Neusa Semibold
+	font-size em(22px)
+	
+/* Modules */
+.btn
+	padding em(6px) em(12px)
+	border 1px solid transparent
+	border-radius em(25px)
+	+m('blue')
+		background-color $blue
+		color white
+
+/* Layout styles */
+.header
+	.top-nav
+		display flex
+		justify-content space-between
+		padding em(23px)
+		+media(960px)
+			size 100% 90px
+			padding 0 em(23px)
+		.top-nav-logo
+			flex-center()
+			img
+				size auto 40px
+		.top-nav-responsive
+			size 50px
+			flex-center()
+			+media(960px)
+				display none
+			svg
+				size 32px
+				fill $blue
+		.top-nav-menu
+			display none
+			+media(960px)
+				display block
+				height inherit
+				ul
+					display flex
+					height inherit
+					li
+						height 100%
+						margin 0 1rem
+						font-size em(16px)
+						flex-center()
+					.list-item
+						&:hover
+							a
+								color $blue
+	.bottom-nav
+		border-top 3px solid $blue
+		background-color #6195CB
+		color white
+		padding em(16px) em(22px)
+		font-size em(14px)
+		+media(960px)
+			font-size em(16px)
+		.flex-container
+			flex-direction column
+			+media(768px)
+				flex-direction row
+				align-items center
+				justify-content space-around
+			+media(960px)
+				justify-content space-between
+		.bottom-nav-info
+			font-family Neusa Semibold
+			display flex
+			justify-content space-between
+			margin em(14px) 0 0 0
+			letter-spacing .5px
+			+media(768px)
+				margin 0
+				span:first-child
+					border-right 2px solid white
+					margin-right 1rem
+					padding-right 1rem
+		.bottom-nav-search
+			display none
+			+media(960px)
+				display block
+
+/* Slider */
+.slider-wrapper
+	size 100% auto
+	.slider
+		size 100% 200px
+		position relative
+		+media(760px)
+			height 450px
+		+media(960px)
+			height 550px
+		.slider-item
+			size 100%
+			img
+				size 100%
+				object-fit cover
+				position absolute
+				top 0
+				left 0
+				z-index -1
+				display block
+			.flex-container
+				size 100%
+				display flex
+				justify-content center
+				align-items flex-end
+				padding em(20px) em(40px)
+				+media(760px)
+					justify-content flex-start
+					padding 0 0 5% 5%
+				+media(1080px)
+					padding 0 0 5% 0
+				.slider-item-content
+					background-color rgba(white, .2)
+					size 100% 70%
+					max-height 150px
+					padding em(14px) em(32px)
+					color white
+					display flex
+					flex-direction column
+					justify-content space-between
+					align-items flex-start
+					+media(760px)
+						width 50%
+						justify-content space-around
+						.section-big-title
+							font-size em(24px)
+							max-width 90%
+							line-height 1.2
+					+media(960px)
+						.section-big-title
+							font-size em(28px)

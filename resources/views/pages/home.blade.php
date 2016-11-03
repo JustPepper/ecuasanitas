@@ -10,7 +10,7 @@
 	            <img src="{{ asset('images/slider-1.jpg') }}" alt="">
 	            <div class="flex-container">
 	                <div class="slider-item-content">
-	                    <h1>PIONEROS EN BRINDARTE EL SERVICIO MÉDICO MÁS COMPLETO</h1>
+	                    <h1 class="section-big-title">PIONEROS EN BRINDARTE EL SERVICIO MÉDICO MÁS COMPLETO</h1>
 	                    <a href="#" class="btn btn--blue">Conoce nuestros servicios</a>
 	                </div>
 	            </div>

@@ -5,9 +5,25 @@
 @section('content')
 
 	<div class="slider-wrapper">
-	    <div class="slider">
+	    <div class="slider cycle-slideshow"
+		data-cycle-fx="scrollHorz" 
+    	data-cycle-timeout="4000"
+    	data-cycle-log=false
+    	data-cycle-slides="> div"
+	   	>
 	        <div class="slider-item">
 	            <img src="{{ asset('images/slider-1.jpg') }}" alt="">
+	            <span class="with-pattern"></span>
+	            <div class="flex-container">
+	                <div class="slider-item-content">
+	                    <h1 class="section-big-title">PIONEROS EN BRINDARTE EL SERVICIO MÉDICO MÁS COMPLETO</h1>
+	                    <a href="#" class="btn btn--blue">Conoce nuestros servicios</a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="slider-item">
+	            <img src="{{ asset('images/contact.jpg') }}" alt="">
+	            <span class="with-pattern"></span>
 	            <div class="flex-container">
 	                <div class="slider-item-content">
 	                    <h1 class="section-big-title">PIONEROS EN BRINDARTE EL SERVICIO MÉDICO MÁS COMPLETO</h1>
@@ -32,7 +48,7 @@
 	    </div>
 	</div>
 
-	<section class="section">
+	<section class="section section-affiliates">
 	    <div class="flex-container ">
 	        <div class="grid">
 	            <div class="col">
@@ -79,7 +95,7 @@
 	<section class="section section-plans">
 		<div class="grid">
 			<div class="col">
-				<img src="" alt="">
+				<img src="{{ asset('images/padres.png') }}" alt="">
 			</div>
 			<div class="col">
 				<h1 class="section-big-title">CONTAMOS CON LOS MEJORES PLANES</h1>
@@ -100,6 +116,40 @@
 					</li>
 				</ul>
 			</div>
+		</div>
+	</section>
+
+	<section class="section-news">
+		<div class="grid">
+			<div class="col news-image"><img src="{{ asset('images/news1.jpg') }}" alt=""></div>
+			<div class="col news-text">
+				<div>
+					<h2 class="section-subtitle"><b>Ecuasanitas</b> te regala bienestar para tu familia, afíliate ahora!</h2>
+					<p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+					<a href="" class="read-more">Leer más</a>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+			<div class="col news-image"><img src="{{ asset('images/news2.jpg') }}" alt=""></div>
+			<div class="col news-text">
+				<div>
+					<h2 class="section-subtitle"><b>13 de Octubre</b> Día mundial de la visión!</h2>
+					<p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+					<a href="" class="read-more">Leer más</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-contact-info">
+		<span class="with-pattern"></span>
+		<div class="contact-info">
+			<h2 class="section-big-title"><b>CONTÁCTANOS EN:</b></h2>
+			<h3 class="section-big-title">
+				<b>QUITO</b> (02) 3956 280
+				<b>GUAYAQUIL</b> (04) 2 590 770
+			</h2>
 		</div>
 	</section>
 

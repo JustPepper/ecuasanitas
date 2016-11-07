@@ -266,6 +266,10 @@ a {
   background-color: #3caaab;
   color: #fff;
 }
+.btn--border-cian {
+  color: #3caaab;
+  border-color: #3caaab;
+}
 /* Layout styles */
 .overlay-on-small {
   width: 100%;
@@ -1384,6 +1388,11 @@ a {
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media screen and (min-width: 760px) {
   .section-plans-list .plan-item {
@@ -1619,6 +1628,103 @@ a {
 .section-plan-featured .col ul .active {
   border: 1px solid #fff;
   font-weight: 700;
+}
+.plan-description-item {
+  padding: 2.5em 0;
+}
+.plan-description-item .grid {
+  height: auto;
+}
+.plan-description-item .grid .col {
+  height: auto;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.plan-description-item .grid .col .btn {
+  border-radius: 0;
+  width: 100%;
+  font-style: italic;
+  font-size: 1.125em;
+  padding: 0.75em;
+}
+.plan-description-title,
+.plan-description-price {
+  font-family: 'Neusa Semibold';
+  font-size: 2em;
+}
+.plan-description-price {
+  color: #3caaab;
+  margin-bottom: 1.375em;
+}
+.plan-description-text {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0.75em;
+}
+.plan-description-text b {
+  color: #3caaab;
+}
+.plan-description-list {
+  font-family: 'Raleway', sans-serif;
+}
+.plan-description-list li {
+  line-height: 1.5;
+}
+.plan-description-list li .tool-tip {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-left: 16px;
+  margin-top: 0.375em;
+}
+.plan-description-list li .tool-tip i {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgba(79,79,79,0.7);
+  display: inline-block;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 11px;
+  color: #fff;
+}
+.plan-description-list li:before {
+  content: '+';
+  margin-right: 0.5em;
+  color: #3caaab;
+  font-size: 20px;
+}
+.plan-description-list--border li {
+  padding: 0.75em 0;
+  border-bottom: 1px solid #4f4f4f;
+}
+.plan-description-list--border li:last-child {
+  border-bottom: 0;
+}
+[data-tooltip]:hover:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 42px;
+  font-weight: normal;
+  color: #fff;
+  background-color: rgba(79,79,79,0.5);
+  padding: 0 0.5em;
+  font-size: 12px;
+  line-height: 2;
+}
+.section-help {
+  text-align: center;
+  background-color: #ececec;
+}
+.section-help .section-subtitle b {
+  color: #3caaab;
+}
+.section-help .btn {
+  margin-top: 1.375em;
 }
 
 /*# sourceMappingURL=main.css.map */

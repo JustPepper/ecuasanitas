@@ -21,7 +21,7 @@
 
 	<section class="section section-plans-list">
 		<div class="flex-container">
-			<div class="plan-item">
+			<div class="plan-item" data-index="0">
 				<div class="plan-item-title">
 					<svg><use xlink:href="#family" /></svg>
 					<h2 class="section-subtitle">INDIVIDUALES <b>Y FAMILIARES</b></h2>
@@ -34,7 +34,7 @@
 					<a href="" class="btn btn--gray">AMPLIAR</a>
 				</div>
 			</div>
-			<div class="plan-item plan-item--active">
+			<div class="plan-item plan-item--active" data-index="1">
 				<div class="plan-item-title">
 					<svg><use xlink:href="#family" /></svg>
 					<h2 class="section-subtitle">GRUPALES</h2>
@@ -47,7 +47,7 @@
 					<a href="" class="btn btn--gray">AMPLIAR</a>
 				</div>
 			</div>
-			<div class="plan-item">
+			<div class="plan-item" data-index="2">
 				<div class="plan-item-title">
 					<svg><use xlink:href="#family" /></svg>
 					<h2 class="section-subtitle">CORPORATIVOS</h2>
@@ -120,18 +120,49 @@
 		</div>
 	</section>
 
-	<section class="section-plan-description">
+	<section id="plan-item-wrapper" class="section-plan-description">
 		<div class="plan-description-icon" style="background-color: #3CAAAB;"><svg style="fill: #ffffff;"><use xlink:href="#down" /></svg></div>
-		<div class="flex-container">
-			<div class="grid">
-				<div class="col">
-					<h2 class="section-title">PLAN GRUPAL</h2>
-					<p class="plan-price"><b>$7 500</b></p>
-				</div>
-				<div class="col">
+		<div class="plan-description-item">
+			<div class="flex-container">
+				<div class="grid">
+					<div class="col">
+						<h2 class="plan-description-title">PLAN GRUPAL</h2>
+						<h3 class="plan-description-price">$7500</h3>
+						<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
+						<ul class="plan-description-list">
+							<li>Cobertura por enfermedad o accidente $7500</li>
+							<li>Deducible anual por persona $70</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul class="plan-description-list plan-description-list--border">
+							<li>Ambulancia aérea nacional (titular) hasta $1500</li>
+							<li>
+								Cobertura cuadrado cerrado al 100% de arancel
+								<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+							</li>
+							<li>
+								Cobertura de maternidad titular o cónyuge hasta $1728
+								<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+							</li>
+							<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
+							<li>Libre elección de médicos al 80% de arancel</li>
+							<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
+							<li>Entre otras coberturas</li>
+						</ul>
+						<a href="" class="btn btn--cian">Desde $42</a>
+					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section class="section section-help">
+		<h2 class="section-subtitle">
+			Tu <b>tranquilidad</b> es tu mejor inversión <br>
+			¿Estás listo para confiar en este plan de cobertura médica grupal?
+		</h2>
+		<a href="" class="btn btn--border-cian">COTIZAR AHORA</a>
 	</section>
 
 @endsection

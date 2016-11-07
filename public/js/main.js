@@ -9,3 +9,8 @@ $('.overlay-on-small').click(function() {
 });
 
 
+$('.plan-item').click(function(e) {
+	e.preventDefault();
+	$('.plan-item').removeClass('plan-item--active');
+	$(this).addClass('plan-item--active');
+})

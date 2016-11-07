@@ -15,6 +15,8 @@
 		display flex
 		flex-direction column
 		justify-content space-between
+		cursor pointer
+		user-select none
 		+media(760px)
 			width 32%
 			max-width 275px
@@ -168,3 +170,82 @@
 			.active
 				border 1px solid white			
 				font-weight 700
+
+.plan-description-item
+	padding em(40px) 0
+	.grid 
+		height auto
+		.col
+			height auto
+			justify-content flex-start
+			.btn
+				border-radius 0
+				width 100%
+				font-style italic
+				font-size em(18px)
+				padding em(12px)
+
+.plan-description-title
+.plan-description-price
+	font-family 'Neusa Semibold'
+	font-size em(32px)
+	
+.plan-description-price
+	color $cian
+	margin-bottom em(22px)
+
+.plan-description-text
+	font-family 'Raleway', sans-serif
+	line-height 1.5
+	margin-bottom em(12px)
+	b
+		color $cian
+		
+.plan-description-list
+	font-family 'Raleway', sans-serif
+	li
+		line-height 1.5
+		.tool-tip
+			position relative
+			size 100% auto
+			padding-left 16px
+			margin-top em(6px)
+			i
+				circle 18px
+				background-color rgba($black, .7)
+				display inline-block
+				flex-center()
+				font-size 11px
+				color white
+		&:before
+			content '+'
+			margin-right em(8px)
+			color $cian
+			font-size 20px
+	+m('border')
+		li
+			padding em(12px) 0
+			border-bottom 1px solid $black
+			&:last-child
+				border-bottom 0
+
+[data-tooltip]:hover:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  left 42px
+  font-weight: normal;
+  color: white;
+  background-color rgba($black, .5)
+  padding 0 em(8px)
+  font-size 12px
+  line-height 2
+}
+
+.section-help
+	text-align center
+	background-color #ececec
+	.section-subtitle
+		b
+			color $cian
+	.btn
+		margin-top em(22px)		

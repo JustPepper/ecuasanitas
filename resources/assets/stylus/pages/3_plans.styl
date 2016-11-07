@@ -1,0 +1,170 @@
+.section-plans-list
+	background-color #ECECEC
+	.flex-container
+		flex-direction column
+		padding 0 em(22px)
+		+media(760px)
+			flex-direction row
+			justify-content center
+			align-items inherit
+	.plan-item
+		background-color white
+		box-shadow 0px 0px 2px rgba($black, .2)
+		margin-bottom em(22px)
+		transition transform 150ms ease
+		display flex
+		flex-direction column
+		justify-content space-between
+		+media(760px)
+			width 32%
+			max-width 275px
+			margin 0 3%
+			&:hover
+				transform scale(1.05)
+		&:last-child
+			margin-bottom 0
+		.plan-item-title
+		.plan-item-body
+		.plan-item-link
+			padding em(22px)
+		.plan-item-title
+			text-align center
+			border-bottom 1px dashed $cian
+			+media(760px)
+				height 150px
+				display flex
+				flex-direction column
+				justify-content center
+				align-items center
+			.section-subtitle
+				color $cian
+				max-width 200px
+				margin auto
+			svg
+				size 50px
+				fill $cian
+		.plan-item-body
+			.section-text
+				margin-top em(22px)
+		.plan-item-link
+			text-align center
+			.btn--gray
+				background-color #A1A1A1
+				color white
+				font-family 'Raleway', sans-serif
+				font-size em(14px)
+		+m('active')
+			+media(760px)
+				transform scale(1.05)
+			.plan-item-title
+				background-color $cian
+				.section-subtitle
+					color white
+				svg
+					fill white
+			.plan-item-body
+				.section-subtitle
+					color $blue
+			.plan-item-link
+				.btn
+					background-color $cian
+
+.section-plan-description
+	position relative
+	.plan-description-icon
+		position absolute
+		circle 50px
+		left 50%
+		margin-left -25px
+		top -25px
+		display flex
+		justify-content center
+		align-items flex-end
+		padding-bottom 10px
+		z-index 999
+		svg
+			size 14px
+	.grid
+		.col
+			flex 1 0 auto
+			size 100% 350px
+			position relative
+			padding em(40px)
+			display flex
+			flex-direction column
+			align-items flex-start
+			justify-content center
+			.max
+				+media(760px)
+					max-width 500px
+			+media(760px)
+				width 50%
+			.section-title
+				font-family 'Neusa Semibold'
+				color $cian
+				margin-bottom em(12px)
+			.section-subtitle
+				font-size em(16px)
+			.plan-price
+				display block
+				margin em(12px) 0
+				font-size em(22px)
+				color #808080
+				b
+					font-family 'Neusa Semibold'
+					color $cian
+			img
+				size 100%
+				object-fit cover
+				object-position center
+				position absolute
+				top 0
+				left 0
+
+.section-plan-featured
+	background-color $cian
+	.section-subtitle
+	.section-title
+	.section-text
+		color white
+	.section-title
+		font-family 'Neusa Semibold'
+	.section-title
+		font-size em(30px)
+	.section-subtitle
+		font-size em(18px)
+	.col
+		padding 0 em(40px)
+		margin-bottom em(22px)
+		+media(760px)
+			margin-bottom 0
+		&:first-child
+			display flex
+			flex-direction column
+			justify-content space-around
+			+media(760px)
+				border-right 1px dotted white
+		ul
+			+media(760px)
+				display flex
+				flex-wrap wrap
+				margin-top em(22px)
+			li
+				display flex
+				align-items center
+				color white
+				margin em(12px) 0
+				max-width 175px
+				border-radius 25px
+				font-family 'Raleway'
+				line-height 32px
+				+media(760px)
+					width 48%
+					margin-right em(22px)
+				svg
+					size 30px
+					fill white
+					margin-right em(12px)
+			.active
+				border 1px solid white			
+				font-weight 700

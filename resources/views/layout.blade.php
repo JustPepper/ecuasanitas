@@ -52,23 +52,6 @@
                     </ul>
                 </nav>
             </div>
-            <div class="bottom-nav">
-                <div class="flex-container">
-                <p>CENTRO DE ATENCIÓN TELEFÓNICA</p>
-                <div class="bottom-nav-info">
-                    <span>3956-280 QUITO Y PROVINCIAS</span>
-                    <span>1700 32 82 72 GUAYAQUIL</span>
-                </div>
-                <div class="bottom-nav-search">
-                    <form action="">
-                        <label for="">
-                            <input type="text" class="btn">
-                            <svg><use xlink:href="#search" /></svg>
-                        </label>
-                    </form>
-                </div>
-                </div>
-            </div>
         </header>
         
         @yield('content')

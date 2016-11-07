@@ -1,0 +1,140 @@
+.page-banner
+	size 100% 200px
+	position relative
+	img
+		size 100%
+		object-fit cover
+		display block
+	.page-banner-icon
+		size 100% 50px
+		position absolute
+		bottom -25px
+		left 0
+		flex-center()
+		span
+			circle 50px
+			flex-center()
+			background-color white
+			border 1px solid #A1A1A1
+			svg
+				size 25px
+				fill #A1A1A1
+
+.section-about
+	padding em(60px) em(40px) em(40px) em(40px)
+	text-align center
+	.section-title
+		margin-bottom em(22px)
+	.section-about-content
+		max-width 500px
+		margin 0 auto em(40px)
+	.btn--cian
+		margin-top em(22px)
+	.vision
+		margin em(22px) auto 
+		.col
+			background-color #E4E4E4
+			text-align left
+			padding em(22px)
+			.section-small-title
+				margin-bottom em(14px)
+			&:first-child
+				margin-bottom em(8px)
+				+media(760px)
+					margin-bottom 0
+					margin-right em(8px)
+
+.section-commitment
+	.section-title
+		text-align center
+		margin-bottom em(22px)
+	.grid
+		align-items flex-start
+		+media(960px)
+			height auto
+		+media(1060px)
+			height 350px
+	.news-text
+		order 2
+		.section-small-title
+		.section-text
+			margin-bottom em(22px)
+			+media(960px)
+				margin-bottom em(16px)
+		+media(760px)
+			padding-top 0
+			padding-bottom 0
+		+media(960px)
+			align-items flex-start !important
+			justify-content center
+	.card
+		margin em(40px) 0
+		.grid
+			size 100% auto
+			.col
+				flex 1 0 auto
+				size 100% 250px
+				color white
+				padding em(16px)
+				position relative
+				background-color $blue
+				+media(760px)
+					size 50% 250px
+				+media(960px)
+					padding em(22px)
+				.section-small-title
+					color white
+					margin-bottom em(16px)
+					+media(1080px)
+						font-size em(22px)
+				ul
+					font-family 'Raleway', sans-serif
+					list-style-image url('../images/check.svg')
+					list-style-position inside
+					li
+						font-size em(14px)
+						line-height 1.5
+				img
+					size 100%
+					object-fit cover
+					display block
+					position absolute
+					top 0
+					left 0
+				&:first-child
+					display flex
+					flex-direction column
+					justify-content center
+					order 2
+					+media(1080px)
+						order 1
+				&:last-child
+					+media(960px)
+						order 2
+
+.section-responsibility
+	.section-title
+		text-align center
+		background-color #E4E4E4
+		padding em(16px) 0
+	.news-text
+		.section-text
+			margin em(12px) 0
+	.news-image
+		img
+			object-position center
+
+.section-check-plans
+	background-image url('../images/news1.jpg')
+	background-size cover
+	background-position center
+	position relative
+	margin-top em(40px)
+	.with-patern
+		z-index 1
+	.info
+		background-color rgba(black, .1)
+		padding em(20px) em(40px)
+		color white
+		.section-text
+			margin-bottom em(20px)

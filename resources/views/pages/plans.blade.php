@@ -67,95 +67,279 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="section-plan-description">
-		<div class="plan-description-icon" style="background-color: #ECECEC;"><svg style="fill: #669999;"><use xlink:href="#down" /></svg></div>
-		<div class="grid">
-			<div class="col">
-				<img src="{{ asset('images/ejecutivos.png') }}" alt="">
-			</div>
-			<div class="col">
-				<div class="max">
-					<h2 class="section-title">PLAN PYMES</h2>
-					<p class="section-subtitle">PLANES DISEÑADOS PARA PROTEGER EL BIENESTAR DE TUS COLABORADORES O GRUPO FAMILIAR COMPUESTO POR 5 HASTA 20 TITULARES.</p>
-					<span class="plan-price">DESDE <b>$42</b></span>
-					<a href="" class="btn btn--cian">COTIZAR AHORA</a>
-				</div>	
-			</div>
-		</div>
-	</section>
-
-	<section class="section section-plan-featured">
-		<div class="flex-container">
+	
+	<div data-plan="0" class="data-plan data-plan--active">
+		<section class="section-plan-description">
+			<div class="plan-description-icon" style="background-color: #ECECEC;"><svg style="fill: #669999;"><use xlink:href="#down" /></svg></div>
 			<div class="grid">
-			<div class="col">
-				<div>
-					<h1 class="section-title">PLAN GRUPAL</h1>
-					<h2 class="section-subtitle">COBERTURA MÉDICA ANUAL</h2>
+				<div class="col">
+					<img src="{{ asset('images/ejecutivos.png') }}" alt="">
 				</div>
-				<p class="section-text">La mejor cobertura para tu grupo familiar o tus colaboradores.</p>
+				<div class="col">
+					<div class="max">
+						<h2 class="section-title">PLAN PYMES</h2>
+						<p class="section-subtitle">PLANES DISEÑADOS PARA PROTEGER EL BIENESTAR DE TUS COLABORADORES O GRUPO FAMILIAR COMPUESTO POR 5 HASTA 20 TITULARES.</p>
+						<span class="plan-price">DESDE <b>$42</b></span>
+						<a href="" class="btn btn--cian">COTIZAR AHORA</a>
+					</div>	
+				</div>
 			</div>
-			<div class="col">
-				<h2 class="section-subtitle"><b>SELECCIONA</b> LA COBERTURA QUE DESEAS CONSULTAR:</h2>
-				<ul>
-					<li class="active">
-						<svg><use xlink:href="#check" /></svg>
-						<span>GRUPAL $7 500</span>
-					</li>
-					<li>
-						<svg><use xlink:href="#check" /></svg>
-						<span>GRUPAL $17 500</span>
-					</li>
-					<li>
-						<svg><use xlink:href="#check" /></svg>
-						<span>GRUPAL $25 500</span>
-					</li>
-					<li>
-						<svg><use xlink:href="#check" /></svg>
-						<span>GRUPAL $37 500</span>
-					</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+		</section>
 
-	<section id="plan-item-wrapper" class="section-plan-description">
-		<div class="plan-description-icon" style="background-color: #3CAAAB;"><svg style="fill: #ffffff;"><use xlink:href="#down" /></svg></div>
-		<div class="plan-description-item">
+		<section class="section section-plan-featured" style="animation-delay: 500ms;">
 			<div class="flex-container">
 				<div class="grid">
-					<div class="col">
-						<h2 class="plan-description-title">PLAN GRUPAL</h2>
-						<h3 class="plan-description-price">$7500</h3>
-						<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
-						<ul class="plan-description-list">
-							<li>Cobertura por enfermedad o accidente $7500</li>
-							<li>Deducible anual por persona $70</li>
-						</ul>
+				<div class="col">
+					<div>
+						<h1 class="section-title">PLAN INDIVIDUAL</h1>
+						<h2 class="section-subtitle">COBERTURA MÉDICA ANUAL</h2>
 					</div>
-					<div class="col">
-						<ul class="plan-description-list plan-description-list--border">
-							<li>Ambulancia aérea nacional (titular) hasta $1500</li>
-							<li>
-								Cobertura cuadrado cerrado al 100% de arancel
-								<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
-							</li>
-							<li>
-								Cobertura de maternidad titular o cónyuge hasta $1728
-								<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
-							</li>
-							<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
-							<li>Libre elección de médicos al 80% de arancel</li>
-							<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
-							<li>Entre otras coberturas</li>
-						</ul>
-						<a href="" class="btn btn--cian">Desde $42</a>
+					<p class="section-text">La mejor cobertura para tu grupo familiar o tus colaboradores.</p>
+				</div>
+				<div class="col">
+					<h2 class="section-subtitle"><b>SELECCIONA</b> LA COBERTURA QUE DESEAS CONSULTAR:</h2>
+					<ul>
+						<li class="active">
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $7 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $17 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $25 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $37 500</span>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="plan-item-wrapper" class="section-plan-description" style="animation-delay: 1s;">
+			<div class="plan-description-icon" style="background-color: #3CAAAB;"><svg style="fill: #ffffff;"><use xlink:href="#down" /></svg></div>
+			<div class="plan-description-item">
+				<div class="flex-container">
+					<div class="grid">
+						<div class="col">
+							<h2 class="plan-description-title">PLAN GRUPAL</h2>
+							<h3 class="plan-description-price">$7500</h3>
+							<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
+							<ul class="plan-description-list">
+								<li>Cobertura por enfermedad o accidente $7500</li>
+								<li>Deducible anual por persona $70</li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="plan-description-list plan-description-list--border">
+								<li>Ambulancia aérea nacional (titular) hasta $1500</li>
+								<li>
+									Cobertura cuadrado cerrado al 100% de arancel
+									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+								</li>
+								<li>
+									Cobertura de maternidad titular o cónyuge hasta $1728
+									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+								</li>
+								<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
+								<li>Libre elección de médicos al 80% de arancel</li>
+								<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
+								<li>Entre otras coberturas</li>
+							</ul>
+							<a href="" class="btn btn--cian">Desde $42</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
+
+	<div data-plan="1" class="data-plan" >
+		<section class="section-plan-description">
+			<div class="plan-description-icon" style="background-color: #ECECEC;"><svg style="fill: #669999;"><use xlink:href="#down" /></svg></div>
+			<div class="grid">
+				<div class="col">
+					<img src="{{ asset('images/ejecutivos.png') }}" alt="">
+				</div>
+				<div class="col">
+					<div class="max">
+						<h2 class="section-title">PLAN PYMES</h2>
+						<p class="section-subtitle">PLANES DISEÑADOS PARA PROTEGER EL BIENESTAR DE TUS COLABORADORES O GRUPO FAMILIAR COMPUESTO POR 5 HASTA 20 TITULARES.</p>
+						<span class="plan-price">DESDE <b>$42</b></span>
+						<a href="" class="btn btn--cian">COTIZAR AHORA</a>
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-plan-featured" style="animation-delay: 500ms;">
+			<div class="flex-container">
+				<div class="grid">
+				<div class="col">
+					<div>
+						<h1 class="section-title">PLAN GRUPAL</h1>
+						<h2 class="section-subtitle">COBERTURA MÉDICA ANUAL</h2>
+					</div>
+					<p class="section-text">La mejor cobertura para tu grupo familiar o tus colaboradores.</p>
+				</div>
+				<div class="col">
+					<h2 class="section-subtitle"><b>SELECCIONA</b> LA COBERTURA QUE DESEAS CONSULTAR:</h2>
+					<ul>
+						<li class="active">
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $7 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $17 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $25 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $37 500</span>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="plan-item-wrapper" class="section-plan-description" style="animation-delay: 1s;">
+			<div class="plan-description-icon" style="background-color: #3CAAAB;"><svg style="fill: #ffffff;"><use xlink:href="#down" /></svg></div>
+			<div class="plan-description-item">
+				<div class="flex-container">
+					<div class="grid">
+						<div class="col">
+							<h2 class="plan-description-title">PLAN GRUPAL</h2>
+							<h3 class="plan-description-price">$7500</h3>
+							<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
+							<ul class="plan-description-list">
+								<li>Cobertura por enfermedad o accidente $7500</li>
+								<li>Deducible anual por persona $70</li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="plan-description-list plan-description-list--border">
+								<li>Ambulancia aérea nacional (titular) hasta $1500</li>
+								<li>
+									Cobertura cuadrado cerrado al 100% de arancel
+									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+								</li>
+								<li>
+									Cobertura de maternidad titular o cónyuge hasta $1728
+									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+								</li>
+								<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
+								<li>Libre elección de médicos al 80% de arancel</li>
+								<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
+								<li>Entre otras coberturas</li>
+							</ul>
+							<a href="" class="btn btn--cian">Desde $42</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div data-plan="2" class="data-plan">
+		<section class="section-plan-description">
+			<div class="plan-description-icon" style="background-color: #ECECEC;"><svg style="fill: #669999;"><use xlink:href="#down" /></svg></div>
+			<div class="grid">
+				<div class="col">
+					<img src="{{ asset('images/ejecutivos.png') }}" alt="">
+				</div>
+				<div class="col">
+					<div class="max">
+						<h2 class="section-title">PLAN PYMES</h2>
+						<p class="section-subtitle">PLANES DISEÑADOS PARA PROTEGER EL BIENESTAR DE TUS COLABORADORES O GRUPO FAMILIAR COMPUESTO POR 5 HASTA 20 TITULARES.</p>
+						<span class="plan-price">DESDE <b>$42</b></span>
+						<a href="" class="btn btn--cian">COTIZAR AHORA</a>
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-plan-featured" style="animation-delay: 500ms;">
+			<div class="flex-container">
+				<div class="grid">
+				<div class="col">
+					<div>
+						<h1 class="section-title">PLAN CORPORATIVO</h1>
+						<h2 class="section-subtitle">COBERTURA MÉDICA ANUAL</h2>
+					</div>
+					<p class="section-text">La mejor cobertura para tu grupo familiar o tus colaboradores.</p>
+				</div>
+				<div class="col">
+					<h2 class="section-subtitle"><b>SELECCIONA</b> LA COBERTURA QUE DESEAS CONSULTAR:</h2>
+					<ul>
+						<li class="active">
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $7 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $17 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $25 500</span>
+						</li>
+						<li>
+							<svg><use xlink:href="#check" /></svg>
+							<span>GRUPAL $37 500</span>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="plan-item-wrapper" class="section-plan-description" style="animation-delay: 1s;">
+			<div class="plan-description-icon" style="background-color: #3CAAAB;"><svg style="fill: #ffffff;"><use xlink:href="#down" /></svg></div>
+			<div class="plan-description-item">
+				<div class="flex-container">
+					<div class="grid">
+						<div class="col">
+							<h2 class="plan-description-title">PLAN GRUPAL</h2>
+							<h3 class="plan-description-price">$7500</h3>
+							<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
+							<ul class="plan-description-list">
+								<li>Cobertura por enfermedad o accidente $7500</li>
+								<li>Deducible anual por persona $70</li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="plan-description-list plan-description-list--border">
+								<li>Ambulancia aérea nacional (titular) hasta $1500</li>
+								<li>
+									Cobertura cuadrado cerrado al 100% de arancel
+									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+								</li>
+								<li>
+									Cobertura de maternidad titular o cónyuge hasta $1728
+									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+								</li>
+								<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
+								<li>Libre elección de médicos al 80% de arancel</li>
+								<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
+								<li>Entre otras coberturas</li>
+							</ul>
+							<a href="" class="btn btn--cian">Desde $42</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
 	<section class="section section-help">
 		<h2 class="section-subtitle">

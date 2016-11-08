@@ -11,6 +11,15 @@ $('.overlay-on-small').click(function() {
 
 $('.plan-item').click(function(e) {
 	e.preventDefault();
+
+	var plan = $(this).attr('data-index');
+
 	$('.plan-item').removeClass('plan-item--active');
 	$(this).addClass('plan-item--active');
-})
+
+	$('.data-plan').hide();
+	$('[data-plan="' + plan + '"]').show();
+	$('[data-plan="' + plan + '"]').children('section').addClass('animated fadeInUp');
+
+
+});

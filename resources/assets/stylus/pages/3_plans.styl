@@ -160,6 +160,10 @@
 				border-radius 25px
 				font-family 'Raleway'
 				line-height 32px
+				border 1px solid transparent
+				transition all 450ms ease
+				cursor pointer
+				user-select none
 				+media(760px)
 					width 48%
 					margin-right em(22px)
@@ -168,11 +172,12 @@
 					fill white
 					margin-right em(12px)
 			.active
-				border 1px solid white			
+				border-color white			
 				font-weight 700
 
 .plan-description-item
 	padding em(40px) 0
+	display none
 	.grid 
 		height auto
 		.col
@@ -184,6 +189,8 @@
 				font-style italic
 				font-size em(18px)
 				padding em(12px)
+	+m('active')
+		display block
 
 .plan-description-title
 .plan-description-price
@@ -256,3 +263,4 @@
 	display none
 	+m('active')
 		display block
+		

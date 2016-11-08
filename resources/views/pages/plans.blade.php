@@ -98,20 +98,20 @@
 				</div>
 				<div class="col">
 					<h2 class="section-subtitle"><b>SELECCIONA</b> LA COBERTURA QUE DESEAS CONSULTAR:</h2>
-					<ul>
-						<li class="active">
+					<ul class="data-plan-price-list">
+						<li class="active" data-plan-price="0">
 							<svg><use xlink:href="#check" /></svg>
 							<span>GRUPAL $7 500</span>
 						</li>
-						<li>
+						<li data-plan-price="1">
 							<svg><use xlink:href="#check" /></svg>
 							<span>GRUPAL $17 500</span>
 						</li>
-						<li>
+						<li data-plan-price="2">
 							<svg><use xlink:href="#check" /></svg>
 							<span>GRUPAL $25 500</span>
 						</li>
-						<li>
+						<li data-plan-price="3">
 							<svg><use xlink:href="#check" /></svg>
 							<span>GRUPAL $37 500</span>
 						</li>
@@ -123,35 +123,70 @@
 
 		<section id="plan-item-wrapper" class="section-plan-description" style="animation-delay: 1s;">
 			<div class="plan-description-icon" style="background-color: #3CAAAB;"><svg style="fill: #ffffff;"><use xlink:href="#down" /></svg></div>
-			<div class="plan-description-item">
-				<div class="flex-container">
-					<div class="grid">
-						<div class="col">
-							<h2 class="plan-description-title">PLAN GRUPAL</h2>
-							<h3 class="plan-description-price">$7500</h3>
-							<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
-							<ul class="plan-description-list">
-								<li>Cobertura por enfermedad o accidente $7500</li>
-								<li>Deducible anual por persona $70</li>
-							</ul>
+			<div class="description-wrapper">
+				<div data-plan-description="0" class="plan-description-item plan-description-item--active">
+					<div class="flex-container">
+						<div class="grid">
+							<div class="col">
+								<h2 class="plan-description-title">PLAN GRUPAL</h2>
+								<h3 class="plan-description-price">$7500</h3>
+								<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
+								<ul class="plan-description-list">
+									<li>Cobertura por enfermedad o accidente $7500</li>
+									<li>Deducible anual por persona $70</li>
+								</ul>
+							</div>
+							<div class="col">
+								<ul class="plan-description-list plan-description-list--border">
+									<li>Ambulancia aérea nacional (titular) hasta $1500</li>
+									<li>
+										Cobertura cuadrado cerrado al 100% de arancel
+										<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+									</li>
+									<li>
+										Cobertura de maternidad titular o cónyuge hasta $1728
+										<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+									</li>
+									<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
+									<li>Libre elección de médicos al 80% de arancel</li>
+									<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
+									<li>Entre otras coberturas</li>
+								</ul>
+								<a href="" class="btn btn--cian">Desde $42</a>
+							</div>
 						</div>
-						<div class="col">
-							<ul class="plan-description-list plan-description-list--border">
-								<li>Ambulancia aérea nacional (titular) hasta $1500</li>
-								<li>
-									Cobertura cuadrado cerrado al 100% de arancel
-									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
-								</li>
-								<li>
-									Cobertura de maternidad titular o cónyuge hasta $1728
-									<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
-								</li>
-								<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
-								<li>Libre elección de médicos al 80% de arancel</li>
-								<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
-								<li>Entre otras coberturas</li>
-							</ul>
-							<a href="" class="btn btn--cian">Desde $42</a>
+					</div>
+				</div>
+				<div data-plan-description="1" class="plan-description-item">
+					<div class="flex-container">
+						<div class="grid">
+							<div class="col">
+								<h2 class="plan-description-title">PLAN GRUPAL</h2>
+								<h3 class="plan-description-price">$17 500</h3>
+								<p class="plan-description-text">Tu <b>tranquilidad</b> es tu mejor inversión</p>
+								<ul class="plan-description-list">
+									<li>Cobertura por enfermedad o accidente $7500</li>
+									<li>Deducible anual por persona $70</li>
+								</ul>
+							</div>
+							<div class="col">
+								<ul class="plan-description-list plan-description-list--border">
+									<li>Ambulancia aérea nacional (titular) hasta $1500</li>
+									<li>
+										Cobertura cuadrado cerrado al 100% de arancel
+										<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+									</li>
+									<li>
+										Cobertura de maternidad titular o cónyuge hasta $1728
+										<div class="tool-tip" data-tooltip="(i) Cobertura de libre elección al 80% del arancel"><i>(i)</i></div>
+									</li>
+									<li>Enfermedades congénitas y/o preexistentes por usuario y por año hasta $700</li>
+									<li>Libre elección de médicos al 80% de arancel</li>
+									<li>Incluye cobertura por muerte accidental hasta $15000, así como gastos médicos, incapacidad total o permanente, asistencia exequial y ambulancia</li>
+									<li>Entre otras coberturas</li>
+								</ul>
+								<a href="" class="btn btn--cian">Desde $42</a>
+							</div>
 						</div>
 					</div>
 				</div>

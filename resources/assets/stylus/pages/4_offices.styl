@@ -1,0 +1,67 @@
+.office
+  text-align center
+  .section-title
+    margin-bottom em(22px)
+  .section-text
+    width 100%
+    padding 0 em(22px)
+    max-width 600px
+    margin auto
+
+.offices-maps
+  padding-left em(22px)
+  padding-right em(22px)
+  +media(1200px)
+    padding-left 0
+    padding-right 0
+  .section-small-title
+    margin 0 auto em(22px)
+    max-width 500px
+    text-align center
+  .flex-container
+    flex-direction column
+    +media(760px)
+      flex-direction row
+  .offices-map
+    +media(760px)
+      width calc(100% - 250px)
+    iframe
+      size 100% 350px
+  .offices-list
+    padding em(22px) 0
+    +media(760px)
+      width 250px
+      padding 0 em(22px)
+    .section-small-title
+      display flex
+      align-items center
+      svg
+        fill #6185BB
+        size 26px
+        margin-right 12px
+    nav
+      list-style none
+      li
+        size 100% 30px
+        line-height 30px
+        background-color #EFEFEF
+        padding-left 12px
+        &:nth-child(2n+2)
+          background none
+
+.directions
+  padding 0 22px
+  +media(1200px)
+    padding 0
+    padding-bottom em(40px)
+  .directions-select
+    margin-bottom em(22px)
+    select
+      background-color #DFDFDF
+      size 100% 35px
+      border 0
+      padding 0 12px
+      max-width 250px
+      font-family 'Raleway'
+      color #7F7F7F
+      outline 0

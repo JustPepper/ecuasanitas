@@ -12,14 +12,14 @@
     <body>
 
         @include('_partials.svg')
-        
+
         <div class="overlay-on-small"></div>
 
         <header class="header">
             <div class="flex-container top-nav">
-                <div class="top-nav-logo">
+                <a href="{{ route('home') }}" class="top-nav-logo">
                     <img src="{{ asset('images/ecuasanitas-logo.svg') }}" alt="">
-                </div>
+                </a>
                 <div class="top-nav-responsive">
                     <svg><use xlink:href="#menu" /></svg>
                 </div>
@@ -28,7 +28,7 @@
                         <li class="list-item">
                             <a href="#">CONOZCA ECUASANITAS</a>
                             <ul class="sub-nav">
-                                <li><a href="">Quiénes somos</a></li>
+                                <li><a href="{{ route('about') }}">Quiénes somos</a></li>
                                 <li><a href="">Misión + Visión</a></li>
                                 <li><a href="">Responsabilidad Social</a></li>
                                 <li><a href="">Mejor empresa en calidad de servicios</a></li>
@@ -36,7 +36,7 @@
                             </ul>
                         </li>
                         <li class="list-item">
-                            <a href="#">PLANES</a>
+                            <a href="{{ route('plans') }}">PLANES</a>
                             <ul class="sub-nav">
                                 <li><a href="">Plan Total</a></li>
                                 <li><a href="">Plan Elegir</a></li>
@@ -45,15 +45,16 @@
                                 <li><a href="">Coberturas Adicionales</a></li>
                             </ul>
                         </li>
-                        <li class="list-item"><a href="#">SERVICIOS</a></li>
-                        <li class="list-item"><a href="#">CENTROS</a></li>
-                        <li class="list-item"><a href="#">OFICINAS</a></li>
+                        <li class="list-item"><a href="{{ route('services') }}">SERVICIOS</a></li>
+                        <li class="list-item"><a href="{{ route('benefits') }}">BENEFICIOS</a></li>
+                        <li class="list-item"><a href="{{ route('centers') }}">CENTROS</a></li>
+                        <li class="list-item"><a href="{{ route('offices') }}">OFICINAS</a></li>
                         <li><a href="#" class="btn btn--blue">PORTAL DE CLIENTES</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        
+
         @yield('content')
 
         <footer class="footer">

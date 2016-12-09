@@ -4,7 +4,7 @@ flex-center()
 	display flex
 	justify-content center
 	align-items center
-	
+
 media(size)
 	@media screen and (min-width: size)
 		{block}
@@ -37,11 +37,16 @@ body
 svg#svg
 	display none
 
+.container
 .flex-container
 	width 100%
 	max-width 1080px
 	margin auto
+
+.flex-container
 	display flex
+
+
 
 a
 	text-decoration none
@@ -57,7 +62,7 @@ a
 
 .section
 	padding em(60px) 0
-	
+
 .section-big-title
 .section-subtitle
 .section-small-title
@@ -92,12 +97,12 @@ a
 
 .section-text
 	font-family 'Raleway', sans-serif
-	
+
 .line
 	size 100% 1px
 	border 0
 	background-color white
-	
+
 .with-pattern
 	position absolute
 	size 100%
@@ -208,13 +213,13 @@ a
 						+media(1080px)
 							visibility visible
 							opacity 1
-			
+
 			.btn
 				border-color white
 				line-height 2
 				margin auto
 				display inline-block
-			
+
 		.sub-nav
 			background-color #6195CB
 			display none
@@ -336,7 +341,9 @@ a
 	font-size em(14px)
 	text-align center
 	padding em(22px) 0
-	
+
+/* Components */
+@import 'components/*'
 
 /* Pages */
 @import 'pages/*'

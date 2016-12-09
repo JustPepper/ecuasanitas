@@ -36,4 +36,16 @@ $('.data-plan-price-list li').click(function() {
 	$('.plan-description-item').removeClass('plan-description-item--active');
 	$('[data-plan-description="' + plan + '"]').addClass('plan-description-item--active');
 
-})
+});
+
+/* Cards */
+
+$(document).ready(function() {
+	$('.cards-grid').find('[data-show="'+$('.card-select').val()+'"]').addClass('card--active');
+});
+
+$('.card-select').on('change', function() {
+	var value = this.value;
+	$('.cards-grid').find('.card--active').removeClass('card--active');
+	$('.cards-grid').find('[data-show="'+this.value+'"]').addClass('card--active');
+});
